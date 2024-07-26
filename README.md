@@ -60,8 +60,8 @@ japan910803/G...4#
 ### setting infura
 https://docs.infura.io/api/getting-started
 
+https://blog.logrocket.com/integrating-walletconnect-vue-js-dapps/
 
-
-
+https://edu.51cto.com/course/6119.html
 
 

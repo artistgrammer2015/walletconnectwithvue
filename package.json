@@ -1,5 +1,5 @@
 {
-  "name": "walletconnectwithvue",
+  "name": "vue-wallet-connect",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,13 +8,13 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "web3modal": "^1.9.4",
-    "@walletconnect/web3-provider": "^1.6.6",
-    "ethers": "^5.5.1",
+    "@walletconnect/web3-provider": "^1.7.8",
     "core-js": "^3.8.3",
-    "node-polyfill-webpack-plugin": "^4.0.0",
+    "ethers": "^5.6.5",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "path-browserify": "^1.0.1",
     "vue": "^3.2.13",
-    "web3": "^4.11.1"
+    "web3": "^1.7.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -22,8 +22,17 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint-plugin-vue": "^8.0.3",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0"
   },
   "eslintConfig": {
     "root": true,
