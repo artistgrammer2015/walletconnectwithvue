@@ -1,3 +1,4 @@
+/**
 <template>
   <status-container/>
 </template>
@@ -56,3 +57,5 @@ export default {
   width: 20%;
 }
 </style>
+
+**/

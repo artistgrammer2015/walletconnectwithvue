@@ -2,6 +2,7 @@ import {reactive, watch} from "vue";
 import connectWalletConnect from "./connectWalletConnect";
 import autoConnect from "./autoConnect";
 import disconnectWallet from "./disconnectWallet";
+import addAccount from "./addAccount";
 
 const STATE_NAME = "userState";
 const defaultState = {
@@ -19,7 +20,8 @@ const state = reactive(getDefaultState());
 const actions = {
     connectWalletConnect,
     autoConnect,
-    disconnectWallet
+    disconnectWallet,
+    addAccount
 };
 watch(
     () => state,
