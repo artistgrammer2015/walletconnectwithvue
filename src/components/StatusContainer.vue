@@ -11,6 +11,8 @@
     <button v-else @click="connectUserWallet" class="button"> Connect Wallet</button>
 
     <button @click="addAccountWallet" class="button"> Add Wallet</button>
+    <button @click="queryAccountWallet" class="button"> Query Wallet</button>
+    <button @click="queryTransactionsWallet" class="button"> Query Trans</button>
   </div>
 </template>
 
@@ -23,7 +25,7 @@ export default {
     msg: String
   },
   setup: () => {
-    const {addAccount, connectWalletConnect, disconnectWallet, state} = connect();
+    const {queryAmount, queryTransactions, addAccount, connectWalletConnect, disconnectWallet, state} = connect();
     const connectUserWallet = async () => {
       await connectWalletConnect();
     };
@@ -37,7 +39,20 @@ export default {
       await addAccount()
     }
 
+    const queryAccountWallet = async () => {
+      await queryAmount("TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t", "TXzjVZoWSKHrXcH3JGzdUXWp1zPy8WieK4")
+          .then(balance => {
+            console.log("amount :" , balance.toString());
+          });
+    }
+
+    const queryTransactionsWallet = async () => {
+      await queryTransactions("TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t", "TXzjVZoWSKHrXcH3JGzdUXWp1zPy8WieK4");
+    }
+
     return {
+      queryAccountWallet,
+      queryTransactionsWallet,
       addAccountWallet,
       connectUserWallet,
       disconnectUser,

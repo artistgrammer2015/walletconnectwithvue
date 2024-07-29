@@ -71,5 +71,11 @@ https://www.trongrid.io/dashboard/detail/148488 japan910803 Gl...4#
 
 https://developers.tron.network/reference/account-createaccount
 
+USDT TRC20 CONSTRACT ADDRESS: TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t
 
+TEST address: TMrcE2cvCP55amGjfc3r9e2sdQkhayv9K1  Gl...8#
 
+API KEY: 1dd56a46-097f-49dc-a1c8-d1deedade207
+
+### 官方github实现了java、tronweb等
+https://github.com/tronprotocol

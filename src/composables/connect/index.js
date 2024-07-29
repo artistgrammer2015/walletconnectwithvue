@@ -3,6 +3,8 @@ import connectWalletConnect from "./connectWalletConnect";
 import autoConnect from "./autoConnect";
 import disconnectWallet from "./disconnectWallet";
 import addAccount from "./addAccount";
+import {queryAmount} from "./tronwebProvider"
+import {queryTransactions} from "./tronwebProvider"
 
 const STATE_NAME = "userState";
 const defaultState = {
@@ -21,7 +23,9 @@ const actions = {
     connectWalletConnect,
     autoConnect,
     disconnectWallet,
-    addAccount
+    addAccount,
+    queryAmount,
+    queryTransactions
 };
 watch(
     () => state,
