@@ -118,4 +118,3 @@ TronDeployment的应用场景广泛，包括但不限于：
   % sudo vi ~/.zshrc
   % echo $GOPATH
   /usr/local/go
-3、
